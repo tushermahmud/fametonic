@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 255, 255, 255;
+  --background-start-rgb: 0, 0, 0;
+  --background-end-rgb: 0, 0, 0;
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+    to bottom,
+    rgb(var(--background-start-rgb)),
+    rgb(var(--background-end-rgb))
+  );
+}
+
+.hero-gradient {
+  background: linear-gradient(90deg, #FC004E 0%, #10CBE0 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.button-glow {
+  box-shadow: 0 0 20px rgba(252, 0, 78, 0.5);
+}
+
+.text-glow {
+  text-shadow: 0 0 10px rgba(16, 203, 224, 0.5);
+}
+
+.banner-background {
+  background-image: url('/banner-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.banner-background::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(90deg, rgba(252, 0, 78, 0.85) 0%, rgba(16, 203, 224, 0.85) 100%);
+  z-index: 1;
+}
+
+.banner-content {
+  position: relative;
+  z-index: 2;
+}
