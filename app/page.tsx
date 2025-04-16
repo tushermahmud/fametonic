@@ -52,7 +52,7 @@ export default function Home() {
             </ul>
             <div className="flex flex-col-reverse md:flex-col pb-[40px]">
               <div className="w-full md:w-fit flex flex-col gap-2.5">
-                <button className="!w-full h-[40px] bg-[#FC004E] hover:bg-[#e0004e] text-white rounded-[10px] font-semibold flex items-center justify-center gap-[10px] px-[60px] py-[8px] transition-all shadow-[2px_2px_10px_0px_#00E7F9]">
+                <button className="!w-full h-[40px] bg-[#FC004E] hover:bg-[#e0004e] text-white rounded-[10px] font-semibold flex items-center justify-center gap-[10px] px-[40px] md:px-[60px] py-[8px] transition-all shadow-[2px_2px_10px_0px_#00E7F9]">
                   GET STARTED
                   <ChevronRight className="h-5 w-5" />
                 </button>
